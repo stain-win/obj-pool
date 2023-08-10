@@ -1,5 +1,5 @@
 {
-    "compileOnSave": false,
+    "extends": "./tsconfig.base.json",
     "compilerOptions": {
         "rootDir": ".",
         "sourceMap": true,
@@ -7,17 +7,14 @@
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "importHelpers": true,
-        "target": "es2017",
+        "target": "es2022",
         "module": "esnext",
         "moduleResolution": "node",
-        "lib": ["es2020", "dom"],
-        "types": ["node", "vitest"],
+        "lib": [
+            "es2020",
+            "dom"
+        ],
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
-        "baseUrl": ".",
-        "paths": {
-            "@stain-win/objPool": ["packages/obj-pool/src/index.ts"]
-        }
-    },
-    "exclude": ["node_modules", "tmp"]
+    }
 }
