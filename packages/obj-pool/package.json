@@ -1,7 +1,8 @@
 {
-    "name": "@stain-win/objPool",
+    "name": "@stain-win/obj-pool",
     "version": "0.0.1",
     "type": "module",
+    "main": "dist/packages/obj-pool/index.js",
     "files": [
         "dist/packages",
         "LICENSE",
