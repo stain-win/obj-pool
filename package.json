@@ -2,6 +2,9 @@
     "name": "@stain-win/obj-pool",
     "version": "0.0.4",
     "license": "MIT",
+    "files": [
+        "dist/packages"
+    ],
     "scripts": {
         "benchmark": "tsx benchmark/benchmark.ts",
         "changelog": "npx conventional-changelog-cli -p angular -i CHANGELOG.md -s",

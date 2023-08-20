@@ -1,11 +1,14 @@
 {
     "name": "@stain-win/obj-pool",
-    "version": "0.0.3",
+    "version": "0.0.4",
+    "license": "MIT",
+    "homepage": "https://github.com/stain-win/obj-pool#readme",
     "type": "module",
     "main": "dist/packages/obj-pool/index.js",
     "files": [
-        "dist/packages",
+        "./dist",
         "LICENSE",
         "README.md"
     ]
+
 }
