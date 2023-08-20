@@ -1,6 +1,6 @@
 {
     "name": "@stain-win/obj-pool",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "license": "MIT",
     "files": [
         "dist/packages"
