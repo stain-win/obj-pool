@@ -1,4 +1,4 @@
-import {build, releasePool, restorePool} from './obj-pool';
+import {build, destroyPool, restorePool} from './obj-pool';
 import {afterEach, beforeEach, describe, expect} from 'vitest';
 import {Dummy} from './test/dummy';
 import {Grumpy} from './test/grumpy';
@@ -17,12 +17,12 @@ describe('ObjPool build', () => {
     });
     afterEach(() => {
         poolDummy.destroy();
-        releasePool(poolDummy);
+        destroyPool(poolDummy);
         restorePool(poolDummy);
         poolDummy.reserve(1);
 
         poolGrumpy.destroy();
-        releasePool(poolGrumpy);
+        destroyPool(poolGrumpy);
         restorePool(poolGrumpy);
     });
 
